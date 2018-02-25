@@ -177,14 +177,15 @@ html {
 
 html::-webkit-scrollbar {
   width: 6px;
-  background-color: #F5F5F5; }
+  background-color: #fff;
+  display: none; }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #d32f2f; }
+  background-color: #fff; }
 
 html::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #F5F5F5; }
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  background-color: #fff; }
 
 /*--------------------------------------------------------------
 Reset
@@ -522,10 +523,10 @@ Content
 
 .content-header {
   width: 100%;
-  height: 400px;
+  height: 340px;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 5px 5px 25px #dadada;
+  /*box-shadow: 5px 5px 25px #dadada;*/
   padding: 5px;
   margin: 73px auto 0 auto;
   background-size: cover;
@@ -607,7 +608,7 @@ Content
     margin: 20px; }
 
 .content-area {
-  padding: 70px 250px 0 250px; }
+  padding: 0 250px 0 250px; }
 
 .error404 .content-area,
 .page .content-area {
@@ -616,7 +617,7 @@ Content
 .article {
   background: white;
   position: relative;
-  margin: 20px 0; }
+  margin: 30px 0; }
 
 .container {
   max-width: 850px;
@@ -744,10 +745,10 @@ Content
     opacity: 0.8; }
   .pager .previous {
     float: right;
-    margin-right: 20%; }
+    margin-right: 10%; }
   .pager .next {
     float: left;
-    margin-left: 20%; }
+    margin-left: 10%; }
   .pager a {
     text-decoration: none;
     font-family: "微软雅黑";
@@ -826,7 +827,7 @@ Footer
   text-align: center;
   font-size: 0.750em;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 60px;
   color: #a2a2a2; }
   .site-info .split {
     margin: 0 2px; }
@@ -918,6 +919,12 @@ a.header-name {
       letter-spacing: 1px;
       text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
       .navbar ul li a:hover {
+        opacity: 1;
+        border-radius: 3px;
+        background: black;
+        color: white;
+        padding: 6px; }
+      .navbar ul li a.active {
         opacity: 1;
         border-radius: 3px;
         background: black;
@@ -1157,7 +1164,8 @@ pre {
     opacity: 0.5; }
 
 .archive {
-  padding-bottom: 60px; }
+  padding-top: 120px;
+  padding-bottom: 80px; }
   .archive h2.year {
     color: #444444;
     padding-left: 1em; }
