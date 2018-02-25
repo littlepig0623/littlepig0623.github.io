@@ -76,7 +76,7 @@
           
           
             <li>
-              <a href="/.">
+              <a href="/." class="">
                 
                   <i class="fa fa-home "></i>
                 
@@ -85,7 +85,7 @@
             </li>
           
             <li>
-              <a href="/archives">
+              <a href="/archives" class="">
                 
                   <i class="fa fa-archive "></i>
                 
@@ -94,25 +94,7 @@
             </li>
           
             <li>
-              <a href="/about">
-                
-                  <i class="fa fa-user "></i>
-                
-                关于
-              </a>
-            </li>
-          
-            <li>
-              <a href="/project">
-                
-                  <i class="fa fa-folder-open "></i>
-                
-                项目
-              </a>
-            </li>
-          
-            <li>
-              <a href="/photo">
+              <a href="/photo" class="">
                 
                   <i class="fa fa-photo "></i>
                 
@@ -121,20 +103,20 @@
             </li>
           
             <li>
-              <a href="/guestbook">
+              <a href="/about" class="">
                 
-                  <i class="fa fa-edit "></i>
+                  <i class="fa fa-user "></i>
                 
-                留言
+                关于
               </a>
             </li>
           
             <li>
-              <a href="/atom.xml">
+              <a href="/guestbook" class="">
                 
-                  <i class="fa fa-send "></i>
+                  <i class="fa fa-edit "></i>
                 
-                RSS
+                留言
               </a>
             </li>
           
@@ -154,7 +136,7 @@
       <div class="content-header" style="background: url() no-repeat bottom;">
         <div class="headline">
             <a href="#" class="demo">
-                <div class="img" style="background-image:url(images/head.jpg)"></div>
+                <div class="img" style="background-image:url(/images/head.jpg)"></div>
                 <div class="cover_mask">
                     <div class="info">
                         <span>欢迎来到我的博客</span>
@@ -163,19 +145,8 @@
                 <div class="border"></div>
             </a>
             <h1 id="Hotnews"></h1>
-            <script type="application/javascript">
-               var content = "永远相信美好的事情即将发生";
-               var i = 0;
-               function show(){
-                   var str  = content.substr(0,i);
-                   Hotnews.innerHTML = str + "_";
-                   i++;
-                   if (i>content.length) i=0;
-                   setTimeout("show()",600);
-               }
-               window.onload = show();
-            </script>
-            <div class="header-link">
+            <!-- 分享 -->
+            <!-- <div class="header-link">
               
                 
                   <a href="https://github.com/littlepig0623" class="icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -187,10 +158,80 @@
                   <a href="https://facebook.com" class="icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 
               
-            </div>
+            </div> -->
         </div>
     </div>
   <main class="content-area">
+    
+        <div class="article">
+          <div class="container">
+  <article class="post">
+    <h1 class="entry-title">
+      <a href="/2018/02/25/go/" rel="bookmark">
+        go  
+      </a>
+    </h1>
+    <div class="entry-content">
+      <p>
+        <img src="/images/wall.jpg" alt="">
+      </p>
+    </div>
+    <div class="post-more-link text-center">
+            <a class="btn" href="/2018/02/25/go/" rel="contents">
+              阅读全文 »
+            </a>
+    </div>
+    <p class="posted-on">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+    	2018-02-25
+    </p>
+    <div class="tags-links">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      
+      <a href="/tags/go/" rel="tag">
+        go
+      </a>
+      
+    </div>
+  </article>
+</div>
+
+        </div> 
+    
+        <div class="article">
+          <div class="container">
+  <article class="post">
+    <h1 class="entry-title">
+      <a href="/2018/02/25/try/" rel="bookmark">
+        try  
+      </a>
+    </h1>
+    <div class="entry-content">
+      <p>
+        <img src="/images/wall.jpg" alt="">
+      </p>
+    </div>
+    <div class="post-more-link text-center">
+            <a class="btn" href="/2018/02/25/try/" rel="contents">
+              阅读全文 »
+            </a>
+    </div>
+    <p class="posted-on">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+    	2018-02-25
+    </p>
+    <div class="tags-links">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      
+      <a href="/tags/try/" rel="tag">
+        try
+      </a>
+      
+    </div>
+  </article>
+</div>
+
+        </div> 
     
         <div class="article">
           <div class="container">
@@ -227,43 +268,54 @@
 
         </div> 
     
-        <div class="article">
-          <div class="container">
-  <article class="post">
-    <h1 class="entry-title">
-      <a href="/2018/02/18/hello-world/" rel="bookmark">
-        Hello World  
-      </a>
-    </h1>
-    <div class="entry-content">
-      <p>
-        <img src="/" alt="">
-      </p>
-    </div>
-    <div class="post-more-link text-center">
-            <a class="btn" href="/2018/02/18/hello-world/" rel="contents">
-              阅读全文 »
-            </a>
-    </div>
-    <p class="posted-on">
-        <i class="fa fa-calendar" aria-hidden="true"></i>
-    	2018-02-18
-    </p>
-    <div class="tags-links">
-      <i class="fa fa-tags" aria-hidden="true"></i>
-      
-    </div>
-  </article>
+
+    
+<div class="container" >
+  <ul class="pager">
+    
+    
+      <li class="next">
+        <a href="/page/2/">
+          上一页
+        </a>
+      </li>
+    
+  </ul>
 </div>
 
-        </div> 
-    
-
-    
 
   </main>
-
+  <a href="javascript:;" id="gototop" style="width: 40px; height: 40px; display: none; cursor: pointer; position: fixed; bottom: 140px; right: 100px; background-image:url(/images/top.png)" onclick="gototop()"></a>
 </div>
+<script type="application/javascript">
+  var content = "永远相信美好的事情即将发生";
+  var i = 0;
+  function show() {
+       var str  = content.substr(0,i);
+       Hotnews.innerHTML = str + "_";
+       i++;
+       if (i>content.length) i=0;
+       setTimeout("show()",600);
+  }
+  window.onload = show();
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 400) {
+      document.getElementById('gototop').style.display = 'block'
+    } else {
+      document.getElementById('gototop').style.display = 'none'
+    }
+  }
+  function gototop () {
+    var scrollToTop = window.setInterval(function() {
+      var pos = window.pageYOffset;
+      if ( pos > 0 ) {
+        window.scrollTo( 0, pos - 20 );
+      } else {
+        window.clearInterval( scrollToTop );
+      }
+    }, 16); 
+  }
+</script>
 
 
   <!-- Footer -->
